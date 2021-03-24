@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body class="home">
+    <div class="navbar">
+        <header>
+            <a class="logo" href="dashboard.html">
+                <img src="images/logo/logo_transparent.png"> CMS
+            </a>
+            <div class="left">
+
+                <div class="profile dropdown">
+                    <img src="images/logo/logo_transparent.png">
+                    <div class="username">
+                        <span>Hi, </span>
+                        <p>username</p>
+                        <span><i class="fas fa-angle-down"></i></span>
+                    </div>
+                    <div class="dropdown-items">
+                        <div><a href="javascript:void(0)"><i class="far fa-user"></i> My Profile</a></div>
+                        <div><a href="javascript:void(0)"><i class="fas fa-sign-out-alt"></i> Sign Out</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="navbar m-t-10">
+        <nav>
+            <ul class="menu">
+                <li><a href="javascript:void(0);"><i class="fas fa-home"></i>Sitemap</a></li>
+                <li><a href="javascript:void(0);"><i class="far fa-closed-captioning"></i>Captions</a></li>
+                <li><a class="active" href="products.html"><i class="fas fa-tshirt"></i>Products</a></li>
+                <li><a href="javascript:void(0);"><i class="far fa-image"></i>Add photos</a></li>
+                <li><a href="mailbox.html"><i class="far fa-envelope"></i>Mailbox</a></li>
+                <li><a href="administrators.html"><i class="fas fa-users-cog"></i>Users</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container m-t-20">
+        <div class="form-content">
+            <form>
+                <div class="search d-flex">
+                    <div>
+                        <input name="search " placeholder="What are you looking for...">
+                        <button type="submit"><i class="fas fa-search"></i>&nbsp;Search</button>
+                        <button class="reset-filer"><i class="fas fa-filter"></i></button>
+                    </div>
+                    <div class="open-search-filter"> <i class="fas fa-chevron-circle-down"></i>&nbsp;More Options</div>
+                </div>
+                <div class="other-filters ">
+                    <div class="search d-flex w-100">
+                        <span>
+                            <label for="start_date">Start Date</label>
+                            <input name="start_date" id="startdate" placeholder="What are you looking for..." type="date">
+                        </span>
+                        <span>
+                            <label for="end_date">End Date</label>
+                            <input name="end_date" placeholder="What are you looking for..." type="date">
+                        </span>
+                        <span>
+                            <label for="status_data">Status Data</label>
+                            <select name="date" id="status_data">
+                                <option value="1"> Active </option>
+                                <option value="1"> Canceled </option>
+                                <option value="1"> Pending </option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container m-t-20">
+        <div class="responsiveTable">
+            <table class="m-t-20">
+                <thead>
+                    <tr>
+                        <th class="text-center">#ID</th>
+                        <th class="text-center">Image</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>URL</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="text-center">400</td>
+                        <td class="text-center">
+                            <a href="javascript:void(0);"><img src="images/logo/logo_transparent.png" /></a>
+                        </td>
+                        <td class="text-primary">primAERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;bary</td>
+                        <td>AERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;br /&gt; disposal of trees and vegetation</td>
+                        <td><span class="badge outline-badge-green" title="On stock"> available </span></td>
+                        <td><a target="_blank" href="http://167.71.67.218:5000/home">/home</a></td>
+                        <td>
+                            <div class="icons">
+                                <a href="javascript:void(0);" title="change permission of the post"><i class="fas fa-cogs blue"></i></a>
+                                <a href="edit_page.html" title="edit post"><i class="far fa-edit green"></i></a>
+                                <form method="post" action="http://167.71.67.218:5000/deletepage/400">
+                                    <button type="submit" name="delete"><i class="far fa-trash-alt red"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">400</td>
+                        <td class="text-center">
+                            <a href="javascript:void(0);"><img src="images/logo/logo_transparent.png" /></a>
+                        </td>
+                        <td class="text-primary">primAERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;bary</td>
+                        <td>AERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;br /&gt; disposal of trees and vegetation</td>
+                        <td><span class="badge outline-badge-green" title="On stock"> available </span></td>
+                        <td><a target="_blank" href="http://167.71.67.218:5000/home">/home</a></td>
+                        <td>
+                            <div class="icons">
+                                <a href="javascript:void(0);" title="change permission of the post"><i class="fas fa-cogs blue"></i></a>
+                                <a href="edit_page.html" title="edit post"><i class="far fa-edit green"></i></a>
+                                <form method="post" action="http://167.71.67.218:5000/deletepage/400">
+                                    <button type="submit" name="delete"><i class="far fa-trash-alt red"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-center">400</td>
+                        <td class="text-center">
+                            <a href="javascript:void(0);"><img src="images/logo/logo_transparent.png" /></a>
+                        </td>
+                        <td class="text-primary">primAERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;bary</td>
+                        <td>AERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;br /&gt; disposal of trees and vegetation</td>
+                        <td><span class="badge outline-badge-green" title="On stock"> available </span></td>
+                        <td><a target="_blank" href="http://167.71.67.218:5000/home">/home</a></td>
+                        <td>
+                            <div class="icons">
+                                <a href="javascript:void(0);" title="change permission of the post"><i class="fas fa-cogs blue"></i></a>
+                                <a href="edit_page.html" title="edit post"><i class="far fa-edit green"></i></a>
+                                <form method="post" action="http://167.71.67.218:5000/deletepage/400">
+                                    <button type="submit" name="delete"><i class="far fa-trash-alt red"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">400</td>
+                        <td class="text-center">
+                            <a href="javascript:void(0);"><img src="images/logo/logo_transparent.png" /></a>
+                        </td>
+                        <td class="text-primary">primAERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;bary</td>
+                        <td>AERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;br /&gt; disposal of trees and vegetation</td>
+                        <td><span class="badge outline-badge-green" title="On stock"> available </span></td>
+                        <td><a target="_blank" href="http://167.71.67.218:5000/home">/home</a></td>
+                        <td>
+                            <div class="icons">
+                                <a href="javascript:void(0);" title="change permission of the post"><i class="fas fa-cogs blue"></i></a>
+                                <a href="edit_page.html" title="edit post"><i class="far fa-edit green"></i></a>
+                                <form method="post" action="http://167.71.67.218:5000/deletepage/400">
+                                    <button type="submit" name="delete"><i class="far fa-trash-alt red"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-center">400</td>
+                        <td class="text-center">
+                            <a href="javascript:void(0);"><img src="images/logo/logo_transparent.png" /></a>
+                        </td>
+                        <td class="text-primary">primAERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;bary</td>
+                        <td>AERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;br /&gt; disposal of trees and vegetation</td>
+                        <td><span class="badge outline-badge-green" title="On stock"> available </span></td>
+                        <td><a target="_blank" href="http://167.71.67.218:5000/home">/home</a></td>
+                        <td>
+                            <div class="icons">
+                                <a href="javascript:void(0);" title="change permission of the post"><i class="fas fa-cogs blue"></i></a>
+                                <a href="edit_page.html" title="edit post"><i class="far fa-edit green"></i></a>
+                                <form method="post" action="http://167.71.67.218:5000/deletepage/400">
+                                    <button type="submit" name="delete"><i class="far fa-trash-alt red"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-center">400</td>
+                        <td class="text-center">
+                            <a href="javascript:void(0);"><img src="images/logo/logo_transparent.png" /></a>
+                        </td>
+                        <td class="text-primary">primAERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;bary</td>
+                        <td>AERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;br /&gt; disposal of trees and vegetation</td>
+                        <td><span class="badge outline-badge-green" title="On stock"> available </span></td>
+                        <td><a target="_blank" href="http://167.71.67.218:5000/home">/home</a></td>
+                        <td>
+                            <div class="icons">
+                                <a href="javascript:void(0);" title="change permission of the post"><i class="fas fa-cogs blue"></i></a>
+                                <a href="edit_page.html" title="edit post"><i class="far fa-edit green"></i></a>
+                                <form method="post" action="http://167.71.67.218:5000/deletepage/400">
+                                    <button type="submit" name="delete"><i class="far fa-trash-alt red"></i></button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <a class="viewMore pagination-buttons"> &lt; </a>
+            <a class="viewMore pagination-buttons"> 1 </a>
+            <a class="viewMore pagination-buttons"> 2 </a>
+            <div class="viewMore pagination-buttons three-dots">...</div>
+            <a class="viewMore pagination-buttons"> 3 </a>
+            <a class="viewMore pagination-buttons"> &gt;</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

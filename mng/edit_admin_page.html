@@ -1,0 +1,165 @@
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Edit Admin </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</head>
+
+<body class="home">
+    <div class="navbar">
+        <header>
+            <a class="logo" href="http://167.71.67.218:5000/">
+                <img src="images/logo/logo_transparent.png"> CMS
+            </a>
+
+            <div class="left">
+
+                <div class="profile dropdown">
+                    <img src="images/logo/logo_transparent.png">
+                    <div class="username">
+                        <span>Hi, </span>
+                        <p>Enis</p>
+                        <span><i class="fas fa-angle-down"></i></span>
+                    </div>
+                    <div class="dropdown-items">
+                        <div><a href="javascript:void(0)"><i class="far fa-user"></i> My Profile</a></div>
+                        <div><a href="javascript:void(0)"><i class="fas fa-sign-out-alt"></i> Sign Out</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="navbar m-t-10">
+        <nav>
+            <ul class="menu">
+                <li><a href="javascript:void(0);"><i class="fas fa-home"></i>Sitemap</a></li>
+                <li><a href="javascript:void(0);"><i class="far fa-closed-captioning"></i>Captions</a></li>
+                <li><a href="products.html"><i class="fas fa-tshirt"></i>Products</a></li>
+                <li><a href="javascript:void(0);"><i class="far fa-image"></i>Add photos</a></li>
+                <li><a href="javascript:void(0);"><i class="far fa-envelope"></i>Mailbox</a></li>
+                <li><a class="active" href="administrators.html"><i class="fas fa-users-cog"></i>Users</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container m-t-20">
+        <form method="post" action="#" id="submitForm" enctype="multipart/form-data">
+            <div class="first">
+                <h4 class="title">Armin Pakashtica</h4>
+                <div class="inputContainer g50">
+                    <div>
+                        <p>User Name </p>
+                        <input type="text" name="pageTitle" class="input" placeholder="Name" value="Armin" disabled>
+                    </div>
+                    <div>
+                        <p>User Surname</p>
+                        <input type="text" name="pageTitle" class="input" placeholder="Surname" value="Pakashtica" disabled>
+                    </div>
+                </div>
+
+                <div class="inputContainer g50">
+                    <div>
+                        <p> Email </p>
+                        <input type="email" name="pageTitle" class="input" placeholder="User email" value="ArminP@example.com">
+                    </div>
+                </div>
+
+                <div class="inputContainer g50">
+                    <div>
+                        <p>Display name </p>
+                        <input type="text" name="pageTitle" class="input" placeholder="Set a username" value="ArminP">
+                    </div>
+                    <div>
+                        <p>Role</p>
+                        <select name="pageType" class=" input">
+								<option value="">[ Choose ]</option>
+								<option selected="" value="10"> Super Admin </option>
+								<option value="11"> Media & Publication </option> 
+								<option value="11"> Finance </option> 
+							</select>
+                    </div>
+                </div>
+
+                <div class="inputContainer g50">
+                    <div>
+                        <p> Password </p>
+                        <input type="password" name="user_password" class="input" placeholder="Your password" value="ArminArminArmin">
+                    </div>
+                </div>
+
+                <div class="inputContainer g50">
+                    <div class="radio">
+                        <p>Status</p>
+                        <div class="custom-control">
+                            <input type="radio" id="gjinia_baba" name="gjinia" checked="" class="input">
+                            <label for="gjinia_baba">Active</label>
+                        </div>
+                        <div class="custom-control">
+                            <input type="radio" id="gjinia_baboo" name="gjinia" class="input">
+                            <label for="gjinia_baboo">Deactive</label>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <p>2FA status</p>
+                        <div class="custom-control">
+                            <input type="radio" id="2fa_on" name="2fa" checked="" class="input">
+                            <label for="2fa_on">Active</label>
+                        </div>
+                        <div class="custom-control">
+                            <input type="radio" id="2fa_off" name="2fa" class="input">
+                            <label for="2fa_off">Deactive</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputContainer flex-column">
+                    <div>
+                        <p>Admin Bio</p>
+                        <textarea id="pershkrimi" class="input" style="display: none;">AERI is engaged in the safe and &lt;br /&gt; conscientious management, reduction and &lt;br /&gt; disposal of trees and vegetation</textarea>
+                    </div>
+                </div>
+
+            </div>
+            <div class="second">
+                <div class="inputContainer justify-content-end m-t-20">
+                    <input type="submit" name="submit" class="input width100 outline-badge-green shadow" value="Save Changes">
+                </div>
+
+                <div class="inputContainer justify-content-end m-t-20">
+                    <input type="submit" name="submit" class="input width100 outline-badge-blue shadow" value="See Activity">
+                </div>
+
+                <div class="inputContainer justify-content-end m-t-20">
+                    <input type="submit" name="submit" class="input width100 outline-badge-red shadow" value="Delete Admin">
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplemde/1.11.2/simplemde.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        new SimpleMDE({
+            element: document.getElementById("pershkrimi"),
+            spellChecker: false,
+        });
+    </script>
+</body>
+
+</html>
